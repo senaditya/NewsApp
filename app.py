@@ -31,5 +31,5 @@ def index():
     return render_template("index.html", news_data=news_data["articles"])
 
 
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     app.run()
