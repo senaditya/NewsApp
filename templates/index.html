@@ -14,16 +14,14 @@
         <h1>Latest News</h1>
     </header>
 
-    <!-- <p>{{news_data}}</p> -->
-
     <div class="news-container">
         {% for news_item in news_data %}
         <div class="news-card">
-            <img class="news-image" src="{{news_item['image']}}" alt="News Image">
-            <div class="news-content">
-                <div class="news-title">{{ news_item['title'] }}</div>
-                <div class="news-description">{{ news_item['description'] }}</div>
-            </div>
+                <img class="news-image" src="{{ news_item['image'] }}" alt="News Image">
+                <div class="news-content">
+                    <div class="news-title">{{ news_item['title'] }}</div>
+                    <div class="news-description">{{ news_item['description'] }}</div>
+                </div>
         </div>
         {% endfor %}
     </div>
